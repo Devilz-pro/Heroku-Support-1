@@ -16,6 +16,10 @@ class Config(object):
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
+    SP_LIT_ALGO_RITH_M = os.environ.get(
+        "SP_LIT_ALGO_RITH_M",
+        "hjs"
+    )
     TG_MAX_FILE_SIZE = 2097152000
     FREE_USER_MAX_FILE_SIZE = 50000000
     # chunk size that should be used with requests
@@ -32,8 +36,8 @@ class Config(object):
     MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START = int(os.environ.get("MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START", 600))
     MAX_TG_SPLIT_FILE_SIZE = int(os.environ.get("MAX_TG_SPLIT_FILE_SIZE", 1072864000))
     # add config vars for the display progress
-    FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "█")
-    UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "░")
+    FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "●")
+    UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "○")
     # add offensive API
     TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
     CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
@@ -55,6 +59,6 @@ class Config(object):
     LOG_COMMAND = os.environ.get("LOG_COMMAND", "logssg")
     SPLIT_COMMAND = os.environ.get("SPLIT_COMMAND", "splitsnf")
     RENAME_COMMAND = os.environ.get("RENAME_COMMAND", "renamedgj")
-    UPLOAD_TO_CLOUD_WHEN_RENAME = os.environ.get("UPLOAD_TO_CLOUD_WHEN_RENAME", "N")
+    UPLOAD_TO_CLOUD_WHEN_RENAME = os.environ.get("UPLOAD_TO_CLOUD_WHEN_RENAME", "Nqdx")
     GP_LINKS_API_KEY = os.environ.get("GP_LINKS_API_KEY", None)
     GP_LINKS_COMMAND = os.environ.get("GP_LINKS_COMMAND", "gplink")
